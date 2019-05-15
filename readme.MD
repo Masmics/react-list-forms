@@ -1,1 +1,1 @@
-React Lists and Forms Project: Simple Color Form
+React Lists and Forms Project: Simple Photo Album
