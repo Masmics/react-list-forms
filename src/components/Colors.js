@@ -20,3 +20,4 @@ Colors.propTypes = {
   colors: PropTypes.array.isRequired
 };
 
+export default Colors;
