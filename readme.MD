@@ -1,1 +1,1 @@
-React Lists and Forms Project: Simple Colors List
+React Lists and Forms Project: Simple Text Formatter
