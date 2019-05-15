@@ -1,1 +1,1 @@
-React Lists and Forms Project: Simple Photo Album
+React Lists and Forms Project: Simple Child Sidebar
