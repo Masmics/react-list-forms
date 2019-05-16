@@ -1,5 +1,22 @@
 .Sidebar {
-  width: '3em';
-  background-color: indigo;
-  color: ghostwhite;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 36vw;
+  height: 100vh;
+  padding: 1rem;
+
+  background-color: black;
+  color: white;
+
+  text-align: center;
+
+  a {
+    display: block;
+
+    color: white;
+
+    font-size: 3rem;
+    text-decoration: none;
+  }
 }

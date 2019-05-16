@@ -7,10 +7,4 @@ describe('Sidebar', () => {
     const wrapper = shallow(<Sidebar />);
     expect(wrapper).toMatchSnapshot;
   });
-
-  // it('can render bananas', () => {
-  //   const wrapper = shallow(<Banana />);
-  //   wrapper.find('select').at(0).simulate('select');
-  //   expect(wrapper.state('color')).toEqual('black');
-  // });
 });
