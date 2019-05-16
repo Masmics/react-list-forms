@@ -5,12 +5,13 @@ const colorToHex = color => {
   return `${color.toString(16).padStart(2, 0)}`.toUpperCase();
 };
 
-const rgbToHex = rgb => { // (rgb) - why parentheses?
-  return `${colorToHex(rgb.red)}${colorToHex(rgb.green)}${colorToHex(rgb.blue)}`;
+const rgbToHex = (rgb) => { // (rgb) - why parentheses?
+  return `#${colorToHex(rgb.red)}${colorToHex(rgb.green)}${colorToHex(rgb.blue)}`;
 };
 
 function Color({ name, rgb }) { // <---- why deconstructed?
   const hex = rgbToHex(rgb);
+
   const colorStyle = {
     display: 'inline-block',
     backgroundColor: hex,
@@ -19,26 +20,20 @@ function Color({ name, rgb }) { // <---- why deconstructed?
   };
 
   return (
-    <ul>
-      <li>
-        <li>Color Name: </li>
-        <li>{name || hex} <div style={colorStyle}></div></li>
-      </li>
+    <dl>
+      <dt>Color Name: </dt>
+      <dd>{name || hex} <div style={colorStyle}></div></dd>
 
-      <li>
-        <li>Hex: </li>
-        <li>{hex} <div style={colorStyle}></div></li>
-      </li>
+      <dt>Hex: </dt>
+      <dd>{hex} <div style={colorStyle}></div></dd>
 
-      <li>
-        <li>RGB: </li>
-        <li>
-          <p>Red: {rgb.red}</p>
-          <p>Green: {rgb.green}</p>
-          <p>Blue: {rgb.blue}</p>
-        </li>
-      </li>
-    </ul>
+      <dt>RGB: </dt>
+      <dd>
+        <p>Red: {rgb.red}</p>
+        <p>Green: {rgb.green}</p>
+        <p>Blue: {rgb.blue}</p>
+      </dd>
+    </dl>
   );
 }
 
