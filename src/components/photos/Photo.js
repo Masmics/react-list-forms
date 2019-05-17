@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 
 function Photo({ photo }) {
   return (
-    <li>{photo}</li>
+    <img src={photo} />
   );
 }
 
 Photo.propTypes = {
-
   photo: PropTypes.object.isRequired
 };
 
