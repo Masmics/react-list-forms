@@ -1,1 +1,1 @@
-React Lists and Forms Project
+React Lists and Forms Project: Simple Colors List
