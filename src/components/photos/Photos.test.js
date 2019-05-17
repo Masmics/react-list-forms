@@ -10,6 +10,6 @@ describe('Photos component', () => {
       'img3'
     ];
     const wrapper = shallow(<Photos photos={photos} />);
-    expect(wrapper).toMatchSnapShot();
+    expect(wrapper).toMatchSnapShot;
   });
 });
