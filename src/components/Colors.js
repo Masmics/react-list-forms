@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Color from './Color';
-import styles from './Colors.css';
 
 function Colors({ colors }) {
 
