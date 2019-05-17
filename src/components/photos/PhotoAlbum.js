@@ -9,7 +9,7 @@ import styles from './PhotoAlbum.css';
 
 function PhotoAlbum({ title, photos }) {
   return (
-    <section key={`${title}-${photos}`} className={styles.PhotoAlbum}>
+    <section key={photos} className={styles.PhotoAlbum}>
       <h2>{title}</h2>
       <Photos photos={photos} />
     </section>

@@ -1,11 +1,11 @@
 import mercury from '../../../assets/mercury.jpg';
 import venus from '../../../assets/venus.png';
-import earth from '../../../assets/venus.png';
-import mars from '../../../assets/venus.png';
-import jupiter from '../../../assets/venus.png';
-import saturn from '../../../assets/venus.png';
-import uranus from '../../../assets/venus.png';
-import neptune from '../../../assets/venus.png';
+import earth from '../../../assets/earth.jpg';
+import mars from '../../../assets/mars.jpg';
+import jupiter from '../../../assets/jupiter.jpg';
+import saturn from '../../../assets/saturn.jpg';
+import uranus from '../../../assets/uranus.jpg';
+import neptune from '../../../assets/neptune.jpg';
 
 const picArray = [
   mercury,
