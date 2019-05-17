@@ -1,0 +1,28 @@
+.PhotoAlbum {
+  width: 100rem;
+  padding: 2rem;
+  margin: auto;
+
+  h2 {
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  li {
+    height: 10rem;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
