@@ -4,6 +4,9 @@ exports[`CreateColor component creates a new color 1`] = `
 <form
   onSubmit={[Function]}
 >
+  <p>
+    Enter Color Name:
+  </p>
   <input
     name="name"
     onChange={[Function]}
@@ -16,6 +19,9 @@ exports[`CreateColor component creates a new color 1`] = `
     type="color"
     value="#000000"
   />
+  <p>
+    Select Color:
+  </p>
   <button>
     Add Color
   </button>

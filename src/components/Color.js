@@ -15,12 +15,14 @@ const hexToRgb = hex => {
 
 function Color({ name, hex }) {
   const rgb = hexToRgb(hex);
+  const display = 'inline-block';
+  const ems = '2em';
 
   const colorStyle = {
-    display: 'inline-block',
+    display: display,
     backgroundColor: hex,
-    width:'0.8em',
-    height: '0.8em'
+    width: ems,
+    height: ems
   };
 
   return (

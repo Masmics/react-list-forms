@@ -7,13 +7,14 @@ exports[`Color component renders one color 1`] = `
   </dt>
   <dd>
     Green
+     
     <div
       style={
         Object {
-          "backgroundColor": "#",
-          "display": "flexbox",
-          "height": "0.85em",
-          "width": "0.85em",
+          "backgroundColor": "#008000",
+          "display": "inline-block",
+          "height": "2em",
+          "width": "2em",
         }
       }
     />
@@ -22,17 +23,7 @@ exports[`Color component renders one color 1`] = `
     Hex
   </dt>
   <dd>
-    #
-    <div
-      style={
-        Object {
-          "backgroundColor": "#",
-          "display": "flexbox",
-          "height": "0.85em",
-          "width": "0.85em",
-        }
-      }
-    />
+    #008000
   </dd>
   <dt>
     RGB
@@ -40,15 +31,15 @@ exports[`Color component renders one color 1`] = `
   <dd>
     <p>
       Red: 
-      NaN
+      0
     </p>
     <p>
       Green: 
-      NaN
+      128
     </p>
     <p>
       Blue: 
-      NaN
+      0
     </p>
   </dd>
 </dl>

@@ -1,5 +1,29 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import CreateColor from '../components/CreateColor';
+import Colors from '../components/Colors';
 
-// create a ColorList container that holds your state
-// store a list of colors in ColorList state
+export default class ColorList extends PureComponent {
+  colors = Colors;
+  state = {
+    colors:  [{ name: 'Tomato', hex: '#ff6347' }, { name: 'MediumSeaGreen', hex: '#3cb371' }, { name: 'SlateBlue', hex: '#6a5acd' }, { name: 'Violet', hex: '#ee82ee' }]
+  }
+
+  addColor = color => {
+    this.setState(state => {
+      return {
+        colors: [...state.colors, color]
+      };
+    });
+  }
+
+  render() {
+    const { colors } = this.state;
+    return (
+      <>
+        <CreateColor addColor={this.addColor} />
+        <Colors colors={colors} />
+      </>
+    );
+  }
+}
 

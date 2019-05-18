@@ -4,7 +4,7 @@ import Color from './Color';
 
 describe('Color component', () => {
   it('renders one color', () => {
-    const wrapper = shallow(<Color name="#" hex="#000000" />);
+    const wrapper = shallow(<Color name="Green" hex="#008000" />);
     expect(wrapper).toMatchSnapshot();
   });
 });
