@@ -1,5 +1,6 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import Color from './Color';
 
 // create a Colors component that takes an array of colors
 // a color has name, hex, and rgb

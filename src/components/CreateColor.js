@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { render } from 'react-dom';
 import PropTypes from 'prop-types';
 
 export default class CreateColor extends PureComponent {
@@ -8,7 +7,6 @@ export default class CreateColor extends PureComponent {
     addColor: PropTypes.func.isRequired
   };
 
-  }
   state = {
     name: '',
     color: '#000000'
@@ -17,7 +15,7 @@ export default class CreateColor extends PureComponent {
   handleSubmit = event => {
     event.preventDefault();
     const { name, color } = this.state;
-    this.props.addColor({ name, hex: color });
+    this.props.addColor({ name: { name }, hex: color });
   }
 
   handleChange = ({ target }) => {
@@ -36,6 +34,6 @@ export default class CreateColor extends PureComponent {
         <input name="color" type="color" value={color} onChange={this.handleChange} />
         <button>Add Color</button>
       </form >
-    )
+    );
   }
 }

@@ -1,3 +1,7 @@
 import React from 'react';
+import ColorList from './containers/ColorList';
 
-// create an App component that uses ColorList
+export default function App() {
+  return <ColorList />;
+}
+
